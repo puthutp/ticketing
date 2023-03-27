@@ -23,7 +23,7 @@ const Header = ({ currentUser }) => {
         GitTix
       </Link>
 
-      <div classname='d-flex justify-content-end'>
+      <div className='d-flex justify-content-end'>
         <ul className='nav d-flex align-items-center'>{links}</ul>
       </div>
     </nav>
