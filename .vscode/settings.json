@@ -7,6 +7,8 @@
     "overrideConfigFile": "./.eslintrc.js"
   },
 
+  "prettier.singleQuote": true,
+
   "eslint.validate": ["javascript", "javascriptreact"],
 
   "editor.defaultFormatter": "esbenp.prettier-vscode",
