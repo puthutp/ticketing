@@ -2,8 +2,8 @@ lockfileVersion: '6.0'
 
 dependencies:
   '@pptix/common':
-    specifier: ^1.0.6
-    version: 1.0.6
+    specifier: ^1.0.8
+    version: 1.0.8
   '@types/body-parser':
     specifier: ^1.19.2
     version: 1.19.2
@@ -1436,8 +1436,8 @@ packages:
       '@jridgewell/sourcemap-codec': 1.4.14
     dev: false
 
-  /@pptix/common@1.0.6:
-    resolution: {integrity: sha512-SqucQW/eGHhJfIV4GfOILeMMlZ3vE0yRPUajtBnPN0nu5+H+KObM/Kz5n878bU7rI7PSmDYB4vfxo3zCGeTg/g==}
+  /@pptix/common@1.0.8:
+    resolution: {integrity: sha512-VYT5fIfywzgJW5ENbo7el6+sHxnsMhobA6HsTXtPSKaHPhLO+SC27SxgTK9gOk3Tm8iyXUa7nEuq+I6ZTxn0ig==}
     dependencies:
       '@types/cookie-session': 2.0.44
       '@types/express': 4.17.17
