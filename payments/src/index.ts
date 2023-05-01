@@ -26,6 +26,10 @@ const start = async () => {
     throw new Error('NATS_CLUSTER_ID must be provided');
   }
 
+  if (!process.env.STRIPE_KEY) {
+    throw new Error('STRIPE_KEY must be provided');
+  }
+
   try {
     await natsWrapper.connect(
       process.env.NATS_CLUSTER_ID,
