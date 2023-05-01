@@ -10,19 +10,19 @@ export default ({ url, method, body, onSuccess }) => {
       const response = await axios[method](url, body);
 
       if (onSuccess) {
-        console.log('asdf');
+        console.log('request success');
         onSuccess(response.data);
       } else {
-        console.log('zxcv');
+        console.log('request failed');
       }
 
       return response.data;
     } catch (err) {
       console.log(err);
       setErrors(
-        <div className='alert alert-danger'>
+        <div className="alert alert-danger">
           <h4>Ooops....</h4>
-          <ul className='my-0'>
+          <ul className="my-0">
             {err.response.data.errors.map((err) => (
               <li key={err.message}>{err.message}</li>
             ))}
