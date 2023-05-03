@@ -15,7 +15,7 @@ spec:
       containers:
         - name: payments
           image: puthutp/payments
-          imagePullPolicy: Never
+          imagePullPolicy: IfNotPresent
           env:
             - name: NATS_CLIENT_ID
               valueFrom:

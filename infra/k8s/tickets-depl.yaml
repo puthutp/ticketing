@@ -15,7 +15,7 @@ spec:
       containers:
         - name: tickets
           image: puthutp/tickets
-          imagePullPolicy: Never
+          imagePullPolicy: IfNotPresent
           env:
             - name: NATS_CLIENT_ID
               valueFrom:
