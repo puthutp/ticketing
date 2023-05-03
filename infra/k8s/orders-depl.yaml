@@ -15,7 +15,6 @@ spec:
       containers:
         - name: orders
           image: puthutp/orders
-          imagePullPolicy: IfNotPresent
           env:
             - name: NATS_CLIENT_ID
               valueFrom:

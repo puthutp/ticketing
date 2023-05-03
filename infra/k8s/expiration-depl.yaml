@@ -15,7 +15,6 @@ spec:
       containers:
         - name: expiration
           image: puthutp/expiration
-          imagePullPolicy: IfNotPresent
           env:
             - name: NATS_CLIENT_ID
               valueFrom:
