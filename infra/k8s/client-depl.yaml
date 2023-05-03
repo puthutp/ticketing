@@ -15,7 +15,6 @@ spec:
       containers:
         - name: client
           image: puthutp/client
-          imagePullPolicy: Never
           env:
             - name: JWT_KEY
               valueFrom:
