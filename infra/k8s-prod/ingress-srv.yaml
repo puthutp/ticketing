@@ -3,9 +3,14 @@ kind: Ingress
 metadata:
   name: ingress
   annotations:
+    cert-manager.io/cluster-issuer: 'letsencrypt-prod'
     kubernetes.io/ingress.class: nginx
     nginx.ingress.kubernetes.io/use-regex: 'true'
 spec:
+  tls:
+    - hosts:
+        - www.build-test.xyz
+      secretName: tls-secret
   rules:
     - host: www.build-test.xyz
       http:
