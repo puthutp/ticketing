@@ -18,7 +18,8 @@ stripe.com
 # Set secret in kubectl
 
 `kubectl create secret generic jwt-secret --from-literal JWT_KEY=asdf`
-`k create secret generic stripe-secret --from-literal=STRIPE_KEY=<stripe-secret-key>`
+
+`kubectl create secret generic stripe-secret --from-literal=STRIPE_KEY=<stripe-secret-key>`
 
 # Run
 
@@ -33,6 +34,9 @@ stripe.com
 # Production and dev differences
 
 - adjust domain names
+  A: <domain> to -> kubernetes
+  CNAME: www.<domain> to <domain>
+
 - in client/api/build-client.js, use  
   `http://ingress-nginx-controller.ingress-nginx.svc.cluster.local`  
   instead of domain
